@@ -24,9 +24,7 @@ import org.springframework.web.context.WebApplicationContext;
 import com.example.demo.controller.LoginController;
 import com.example.demo.model.User;
 import com.example.demo.repository.UserRepository;
-import com.example.demo.rest.model.CheckOtpPOJO;
 import com.example.demo.rest.model.LoginPOJO;
-import com.example.demo.services.LoginService;
 import com.example.demo.services.LoginServiceImpl;
 import com.fasterxml.jackson.databind.ObjectMapper;
 

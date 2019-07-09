@@ -1,7 +1,5 @@
 package com.example.demo.services;
 
-import java.util.Date;
-
 import com.example.demo.model.User;
 import com.example.demo.rest.model.CheckOtpPOJO;
 import com.example.demo.rest.model.LoginPOJO;

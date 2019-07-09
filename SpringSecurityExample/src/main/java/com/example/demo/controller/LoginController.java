@@ -38,7 +38,6 @@ public class LoginController {
 	@RequestMapping("/user/forgotPassword")
 	@ResponseBody
 	public User findByEmailId(@RequestBody String emailId) {
-		User user = loginService.findByEmail(emailId);
 		return loginService.forgotPassword(emailId);
 	}
 
