@@ -38,6 +38,7 @@ public class User {
 	@Column(name="createdTime",nullable=true)
 	private Date otpTime;
 	
+
 	public String getOtp() {
 		return otp;
 	}

@@ -8,8 +8,8 @@ import { User } from '../User';
   styleUrls: ['./logged-in.component.css']
 })
 export class LoggedInComponent implements OnInit {
-  user:User;
-  constructor(private sharedService:SharedServiceUserService) {this.user=this.sharedService.getUser(); }
+  user: User;
+  constructor(private sharedService: SharedServiceUserService) { this.user = this.sharedService.getUser(); }
 
   ngOnInit() {
     // this.user=this.sharedService.getUser();

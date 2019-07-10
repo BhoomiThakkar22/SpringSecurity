@@ -34,8 +34,6 @@ export class LogInComponent implements OnInit {
     if (this.logInForm.invalid) {
       return;
     }
-    console.log(this.logInForm.get('email').value);
-    console.log(this.logInForm.get('password').value);
     this.springSecurityService.getLogIn(this.logInForm.get('email').value,this.logInForm.get('password').value).subscribe((res)=>{
       if(res == null){
         alert("user is not valid...!!!!");
@@ -48,6 +46,6 @@ export class LogInComponent implements OnInit {
     
   }
   onRegister() {
-    this.route.navigate(['\signUp']);
+    this.route.navigate(['/signUp']);
   }
 }
