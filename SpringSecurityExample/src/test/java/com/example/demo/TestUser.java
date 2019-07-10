@@ -121,7 +121,7 @@ public class TestUser {
 
 		Mockito.when(userRepository.findByEmail(user.getEmailId())).thenReturn(user);
 		try {
-			RequestBuilder requestBuilder = MockMvcRequestBuilders.post("/user/forgotPassword")
+			RequestBuilder requestBuilder = MockMvcRequestBuilders.get("/user/forgotPassword")
 					.accept(MediaType.APPLICATION_JSON).content(user.getEmailId())
 					.contentType(MediaType.APPLICATION_JSON);
 			MvcResult result = mockMvc.perform(requestBuilder).andReturn();
